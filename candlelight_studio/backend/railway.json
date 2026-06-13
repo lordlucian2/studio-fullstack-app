@@ -1,0 +1,3 @@
+# Railway deployment configuration
+# The backend will be deployed as a Node.js service
+# Start command: npm start
