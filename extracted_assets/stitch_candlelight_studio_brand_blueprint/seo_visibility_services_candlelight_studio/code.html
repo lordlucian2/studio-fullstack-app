@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SEO &amp; Visibility Services | Candlelight Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(245, 166, 35, 0.15);
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#201f1f",
+                      "on-secondary-fixed-variant": "#643f00",
+                      "inverse-surface": "#e5e2e1",
+                      "on-surface": "#e5e2e1",
+                      "error-container": "#93000a",
+                      "outline": "#9f8e7a",
+                      "surface-variant": "#353534",
+                      "primary": "#ffc880",
+                      "on-surface-variant": "#d7c3ae",
+                      "background": "#131313",
+                      "secondary-container": "#c68315",
+                      "on-secondary-container": "#3d2400",
+                      "on-error": "#690005",
+                      "glow-amber": "rgba(245, 166, 35, 0.15)",
+                      "tertiary": "#d4d2cb",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary-container": "#484743",
+                      "inverse-on-surface": "#313030",
+                      "surface-container-high": "#2a2a2a",
+                      "on-tertiary-fixed": "#1c1c18",
+                      "on-primary-container": "#644000",
+                      "on-secondary-fixed": "#2a1800",
+                      "tertiary-fixed": "#e5e2db",
+                      "on-primary": "#452b00",
+                      "surface-tint": "#ffb955",
+                      "on-secondary": "#462a00",
+                      "primary-fixed": "#ffddb4",
+                      "surface-container-lowest": "#0e0e0e",
+                      "primary-fixed-dim": "#ffb955",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#291800",
+                      "tertiary-container": "#b8b6b0",
+                      "surface-container-highest": "#353534",
+                      "surface-bright": "#3a3939",
+                      "on-primary-fixed-variant": "#633f00",
+                      "surface-dim": "#131313",
+                      "secondary-fixed": "#ffddb6",
+                      "surface": "#131313",
+                      "soft-cream": "#EFE7D8",
+                      "on-tertiary-fixed-variant": "#474742",
+                      "tertiary-fixed-dim": "#c9c6c0",
+                      "surface-container-low": "#1c1b1b",
+                      "on-tertiary": "#31312c",
+                      "outline-variant": "#524534",
+                      "on-background": "#e5e2e1",
+                      "inverse-primary": "#835500",
+                      "secondary-fixed-dim": "#ffb95a",
+                      "secondary": "#ffb95a",
+                      "obsidian-surface": "#171717",
+                      "primary-container": "#f5a623"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "margin-base": "1rem",
+                      "gutter": "2rem",
+                      "grid-columns": "12",
+                      "section-padding": "8rem"
+              },
+              "fontFamily": {
+                      "label-md": ["Manrope"],
+                      "headline-xl-mobile": ["Playfair Display"],
+                      "headline-xl": ["Playfair Display"],
+                      "headline-md": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"],
+                      "body-md": ["Manrope"],
+                      "label-caps": ["Manrope"],
+                      "body-lg": ["Manrope"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl">
+<div class="max-w-container-max mx-auto px-margin-base h-20 flex justify-between items-center">
+<div class="font-headline-md text-headline-md font-bold text-on-background tracking-tighter">
+                Candlelight Studio
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Expertise</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b border-primary pb-1" href="#">SEO Strategy</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-primary-container transition-all duration-300 glow-hover">
+                Get a Free Proposal
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-20 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-base grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 z-10">
+<span class="inline-block px-4 py-1 mb-6 border border-primary/30 rounded-full font-label-caps text-label-caps text-primary uppercase">Visibility Architect</span>
+<h1 class="font-headline-xl text-headline-xl mb-8 leading-none">Command the <span class="text-primary italic">Search Landscape.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+                    We transcend basic keyword targeting. At Candlelight Studio, we engineer technical authority and creative relevance to ensure your brand doesn't just rank—it dominates.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-label-md text-label-md flex items-center justify-center gap-2 glow-hover">
+                        Audit My Website
+                        <span class="material-symbols-outlined text-lg">trending_up</span>
+</button>
+<button class="border border-outline px-8 py-4 rounded font-label-md text-label-md text-on-background hover:bg-soft-cream/5 transition-all">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<!-- Abstract Growth Animation -->
+<div class="relative w-full aspect-square flex items-center justify-center">
+
+<div class="z-10 p-8 rounded-xl bg-surface-container/50 border border-outline-variant/30 glass-effect backdrop-blur-md animate-float">
+<div class="flex items-end gap-2 h-32 mb-4">
+<div class="w-8 bg-primary/20 h-[20%]"></div>
+<div class="w-8 bg-primary/40 h-[45%]"></div>
+<div class="w-8 bg-primary/60 h-[60%]"></div>
+<div class="w-8 bg-primary/80 h-[85%]"></div>
+<div class="w-8 bg-primary h-[100%] shadow-[0_-10px_20px_rgba(245,166,35,0.4)]"></div>
+</div>
+<div class="text-center">
+<p class="font-label-caps text-label-caps text-primary">+240% Authority</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-base">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg mb-4">Precision Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    A multi-layered approach to visibility, blending deep technical analysis with sophisticated content architecture.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Service 1: Technical SEO -->
+<div class="md:col-span-8 group bg-obsidian-surface p-12 rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 overflow-hidden relative">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">code</span>
+<h3 class="font-headline-md text-headline-md mb-4">Technical SEO Audits</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                            The foundation of search excellence. We perform deep-cell analysis of crawlability, core web vitals, and schema architecture to ensure search engines favor your platform.
+                        </p>
+<ul class="mt-8 space-y-3 font-label-md text-label-md text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> JavaScript Rendering Optimization</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Advanced Semantic Schema Markup</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Core Web Vital Fine-tuning</li>
+</ul>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+
+</div>
+</div>
+<!-- Service 2: Authority Building -->
+<div class="md:col-span-4 bg-obsidian-surface p-10 rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">verified</span>
+<h3 class="font-headline-md text-headline-md mb-4">Authority Building</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Strategic digital PR and elite backlink acquisition that transforms your brand into a trusted industry titan.
+                    </p>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+<p class="mt-4 font-label-caps text-label-caps text-primary">Target: Domain Authority 75+</p>
+</div>
+<!-- Service 3: Local Search -->
+<div class="md:col-span-4 bg-obsidian-surface p-10 rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">location_on</span>
+<h3 class="font-headline-md text-headline-md mb-4">Local Dominance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Map pack optimization and hyper-local citation management to ensure you're the first choice in your immediate market.
+                    </p>
+</div>
+<!-- Service 4: Real-time Analytics -->
+<div class="md:col-span-8 bg-obsidian-surface p-12 rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">monitoring</span>
+<h3 class="font-headline-md text-headline-md mb-4">Real-time Analytics Reporting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            No more guessing. Access live dashboards that track organic growth, conversion funnels, and ROI down to the dollar.
+                        </p>
+</div>
+<div class="w-full md:w-64 p-6 rounded bg-surface-container-high/50 border border-primary/10">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label-caps text-label-caps text-on-surface">Live Traffic</span>
+<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+</div>
+<div class="space-y-2">
+<div class="h-2 bg-primary/20 w-full rounded"></div>
+<div class="h-2 bg-primary/40 w-5/6 rounded"></div>
+<div class="h-2 bg-primary/60 w-full rounded"></div>
+<div class="h-2 bg-primary/80 w-3/4 rounded"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Search Success (Case Study Stats) -->
+<section class="py-section-padding bg-background relative">
+<div class="max-w-container-max mx-auto px-margin-base">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-4">Search <span class="italic text-primary">Success Stories</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                        Evidence of our technical precision. We don't promise results; we engineer them through data-driven strategy.
+                    </p>
+</div>
+<div class="flex gap-4">
+<button class="p-3 rounded-full border border-outline hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="p-3 rounded-full border border-outline hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Case Study 1 -->
+<div class="group bg-obsidian-surface rounded-xl overflow-hidden border border-outline-variant/10 hover:border-primary/20 transition-all duration-500">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional workspace with multiple monitors displaying complex data visualizations and abstract growth charts. The room is dimly lit with warm amber accents, creating a high-end luxury studio atmosphere focused on strategic digital analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1tX94SSKwEg5oMAtnpIMo-lS3BoXQLwsZiiVkCCJ9EgMgwG_buUuyRK0URAPgXV-LEsIVktbGu_XbOC7u8JClXXYfS6tG0k_brQeQeUlK8tVjQaYLEkO1pLJjopDG-utDVhoS2_-maCi_-XGJwvh8r6--L42BUwt-zOfms48UwLe4XCCQMKGh70NMq7R2xiQGevA5O7iPJu_1r0HjSkMWxsydguJJ4r65lXnp3Yd4ox8GcnH9ZvhFqlX7lQ2P1HTnu1-XgPX0f3g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-surface to-transparent"></div>
+</div>
+<div class="p-8">
+<p class="font-label-caps text-label-caps text-primary mb-2">Fintech SaaS</p>
+<h4 class="font-headline-md text-headline-md mb-4 text-[24px]">Scaling Global Reach</h4>
+<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/20">
+<div>
+<p class="text-primary font-headline-md text-[20px]">+312%</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant">Organic Traffic</p>
+</div>
+<div>
+<p class="text-primary font-headline-md text-[20px]">4.2s</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant">Avg. Load Speed</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="group bg-obsidian-surface rounded-xl overflow-hidden border border-outline-variant/10 hover:border-primary/20 transition-all duration-500">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Close up of a sleek, dark-themed dashboard showing real-time analytics for a luxury e-commerce brand. Glowing lines of amber and white light represent traffic patterns across a world map. The lighting is soft and moody, emphasizing technical precision and data luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCunWS0ieoUVHdFWSsU80vebFGC6IWunhSO4_v4d-7exdOv0rtVnhyPtyNZmS0VD5V6ztEoLOSkiKwZ3C3j3XdcfrnQUICGx76dkXRQadiXaVY4IqNLSC_vR2PtgIiSceczH5aGe4YkzLI_WK8Bs1beanB0kJLHiuShY4fMPfRCmT90B0DrI2SaDkTfRqCwbb4XYCXjPvBtu8by6F8JEEKOAHQPmRmEAWNLSKkZybPJFrQfACbCpkY3OGd3CsntcI5SGa67XGmyY4U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-surface to-transparent"></div>
+</div>
+<div class="p-8">
+<p class="font-label-caps text-label-caps text-primary mb-2">E-commerce Elite</p>
+<h4 class="font-headline-md text-headline-md mb-4 text-[24px]">Revenue Maximization</h4>
+<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/20">
+<div>
+<p class="text-primary font-headline-md text-[20px]">$1.2M</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant">Attributed Revenue</p>
+</div>
+<div>
+<p class="text-primary font-headline-md text-[20px]">Top 3</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant">Key Industry Terms</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study 3 -->
+<div class="group bg-obsidian-surface rounded-xl overflow-hidden border border-outline-variant/10 hover:border-primary/20 transition-all duration-500">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist architectural detail of a modern tech office building at twilight. The structure is characterized by clean lines and large glass panels reflecting a warm orange sunset. The atmosphere is professional and authoritative, signifying the solid foundation of technical SEO infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnEiywyqcX6d66IM_KdyKinuW_Fm290FOhgbgAsvV67zZ0TxUJdg-s1mDkLNpdr_C4XVSG_Mmz3JhJpTDI4MGo5WlSL9UlMAQBD4Nb5gV7dpYVCzrUCFcyaJLrb7XjPrAztIymvLnZUaVBA8_bmF_RCy2l-hQIQ69j0kY7pUNCoul7UdvYKWyN1WjITiIraiCBhrRTgxMR30mWUdQcv7BJMjSYUbdKUD80Mul-F33kjCb2suW_BVvaYLcWWJaDEFBwSo_kznjRHk8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-surface to-transparent"></div>
+</div>
+<div class="p-8">
+<p class="font-label-caps text-label-caps text-primary mb-2">Enterprise B2B</p>
+<h4 class="font-headline-md text-headline-md mb-4 text-[24px]">Authority Transformation</h4>
+<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/20">
+<div>
+<p class="text-primary font-headline-md text-[20px]">DA 62</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant">From Baseline 18</p>
+</div>
+<div>
+<p class="text-primary font-headline-md text-[20px]">50k+</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant">Keywords Ranked</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-primary overflow-hidden relative">
+<div class="max-w-container-max mx-auto px-margin-base text-center relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-6">Ready to Illuminate your <span class="border-b-4 border-on-primary">Visibility?</span></h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-xl mx-auto mb-10">
+                Stop living in the shadows of the second page. Let's build your search dominance today.
+            </p>
+<button class="bg-on-primary text-primary px-10 py-5 rounded font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+                Schedule Your Free Visibility Audit
+            </button>
+</div>
+<!-- Decorative Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/10 rounded-full blur-[120px]"></div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-base grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
+<div class="font-headline-lg text-headline-lg text-on-surface mb-6">Candlelight Studio</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Crafting premium digital experiences and search dominance through technical mastery and artistic vision.
+                </p>
+</div>
+<div class="col-span-6 lg:col-span-2">
+<h5 class="font-label-caps text-label-caps text-primary mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Our Work</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+</ul>
+</div>
+<div class="col-span-6 lg:col-span-2">
+<h5 class="font-label-caps text-label-caps text-primary mb-6">Resources</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Journal</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">SEO Guides</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="col-span-12 lg:col-span-4 mt-12 lg:mt-0">
+<h5 class="font-label-caps text-label-caps text-primary mb-6">Stay Informed</h5>
+<div class="flex gap-2">
+<input class="flex-1 bg-surface-container border-none text-on-surface p-3 rounded focus:ring-1 focus:ring-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+<p class="mt-4 font-label-md text-[12px] text-on-surface-variant/60">© 2024 Candlelight Studio. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Floating Support) -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="bg-secondary-container text-on-secondary-container rounded-full p-4 flex items-center justify-center shadow-xl hover:scale-110 hover:shadow-primary/20 transition-all duration-300 active:scale-95 group">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-3 transition-all duration-300 font-label-caps text-label-caps">Support</span>
+</button>
+</div>
+<script>
+        // Simple scroll reveal interaction
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body></html>

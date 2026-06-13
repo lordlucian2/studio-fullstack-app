@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Design Services | Candlelight Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "outline": "#9f8e7a",
+                        "surface-variant": "#353534",
+                        "primary": "#ffc880",
+                        "on-surface-variant": "#d7c3ae",
+                        "background": "#131313",
+                        "secondary-container": "#c68315",
+                        "on-secondary-container": "#3d2400",
+                        "on-error": "#690005",
+                        "glow-amber": "rgba(245, 166, 35, 0.15)",
+                        "tertiary": "#d4d2cb",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#484743",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "on-primary-container": "#644000",
+                        "on-secondary-fixed": "#2a1800",
+                        "tertiary-fixed": "#e5e2db",
+                        "on-primary": "#452b00",
+                        "surface-tint": "#ffb955",
+                        "on-secondary": "#462a00",
+                        "primary-fixed": "#ffddb4",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary-fixed-dim": "#ffb955",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#291800",
+                        "tertiary-container": "#b8b6b0",
+                        "surface-container-highest": "#353534",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#633f00",
+                        "surface-dim": "#131313",
+                        "secondary-fixed": "#ffddb6",
+                        "surface": "#131313",
+                        "soft-cream": "#EFE7D8",
+                        "on-tertiary-fixed-variant": "#474742",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary": "#31312c",
+                        "outline-variant": "#524534",
+                        "on-background": "#e5e2e1",
+                        "inverse-primary": "#835500",
+                        "secondary-fixed-dim": "#ffb95a",
+                        "secondary": "#ffb95a",
+                        "obsidian-surface": "#171717",
+                        "primary-container": "#f5a623"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-base": "1rem",
+                        "gutter": "2rem",
+                        "grid-columns": "12",
+                        "section-padding": "8rem"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Manrope"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shadow-glow-amber {
+            box-shadow: 0 10px 40px -10px rgba(245, 166, 35, 0.2);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 200, 128, 0.3);
+        }
+        .bento-card {
+            background: #171717;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            background: #1c1b1b;
+            box-shadow: inset 0 0 0 1px rgba(255, 179, 71, 0.3), 0 20px 40px -20px rgba(0,0,0,0.5);
+        }
+        .process-line {
+            background: linear-gradient(90deg, transparent, #ffc880, transparent);
+            height: 1px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-base h-20">
+<span class="font-headline-md text-headline-md font-bold text-on-background tracking-tighter">Candlelight Studio</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Expertise</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">SEO Strategy</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300 shadow-glow-amber">Get a Free Proposal</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-section-padding px-margin-base overflow-hidden">
+
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-4">PREMIUM WEB DESIGN SERVICES</span>
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl text-on-background mb-8 leading-none">Crafting <span class="text-glow text-primary italic">Digital Legacies</span> through Artful Engineering.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">We blend high-end aesthetic precision with modern technical excellence to build websites that don't just exist—they dominate. From initial sketch to pixel-perfect code.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-glow-amber transition-all duration-300">Start Your Project</button>
+<button class="border border-outline-variant text-on-background px-8 py-4 rounded-full font-label-md text-label-md hover:bg-soft-cream/5 transition-all duration-300">View Our Portfolio</button>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-square bg-obsidian-surface rounded-2xl overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated split-screen visual showing a creative process from a raw, hand-drawn graphite sketch of a website layout on artisanal paper to a sleek, neon-lit digital interface on a high-end workstation. The lighting is warm and atmospheric, like a candlelit studio, with deep amber highlights and rich obsidian shadows, emphasizing a transition from traditional craft to modern technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7yzKgUrMxgWVBVOdRfKH01h8gqyMk3s40BKiyReZ9qxRHSMNedmEnT-AcgJrtp1AjHo2IT7A79T4dz_pkx22C2Z7sfDIUs5JZyrOkPIX1yV08efHB3amLo87Epo45TkZMpZNrluExX4n1sjQyVM4ZzaNIp3yK7EEjKAYWW4CgXnFiUEC-kyu2tyRbZSu88RPdfn-KOh0kzE3JyQ790yWNdpW0f9dni6EaS1JJ9uVq3uXj3-VvVO_ATHePGCCZieG0vwUAMX1LUbg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<!-- Floating Tech Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container p-6 rounded-xl border border-outline-variant/30 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">bolt</span>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">PERFORMANCE</p>
+<p class="font-headline-md text-headline-md leading-none text-primary">99+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Services Bento Grid -->
+<section class="py-section-padding px-margin-base bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Our Core Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Focused on the intersection of strategic brand identity and high-performance engineering.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-full">
+<!-- Brand Identity -->
+<div class="bento-card md:col-span-2 md:row-span-1 p-8 rounded-2xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-weight="fill">palette</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Custom Brand Identity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We don't just design sites; we architect digital personas that resonate with premium audiences.</p>
+</div>
+</div>
+<!-- Performance -->
+<div class="bento-card md:col-span-1 md:row-span-2 p-8 rounded-2xl flex flex-col">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl">speed</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Mobile-First Performance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Speed is a luxury. Every millisecond optimized for flawless delivery across any device.</p>
+<div class="mt-auto space-y-2">
+<div class="h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[98%]"></div>
+</div>
+<div class="flex justify-between font-label-caps text-[10px] text-on-surface-variant">
+<span>MOBILE OPTIMIZATION</span>
+<span>98%</span>
+</div>
+</div>
+</div>
+<!-- Interactive UX -->
+<div class="bento-card md:col-span-1 md:row-span-1 p-8 rounded-2xl">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl">auto_awesome</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Interactive UI/UX</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Immersive experiences that guide users through a curated journey with subtle motion design.</p>
+</div>
+<!-- Tech Stack -->
+<div class="bento-card md:col-span-2 md:row-span-1 p-8 rounded-2xl flex items-center gap-8">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Modern Tech Stacks</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Utilizing Next.js, Headless CMS, and GSAP for robust, future-proof digital architectures.</p>
+</div>
+<div class="hidden sm:grid grid-cols-2 gap-3">
+<div class="w-12 h-12 bg-background flex items-center justify-center rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-surface-variant">deployed_code</span>
+</div>
+<div class="w-12 h-12 bg-background flex items-center justify-center rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-surface-variant">terminal</span>
+</div>
+<div class="w-12 h-12 bg-background flex items-center justify-center rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-surface-variant">database</span>
+</div>
+<div class="w-12 h-12 bg-background flex items-center justify-center rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-surface-variant">cloud</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Audit CTA Section -->
+<section class="py-section-padding px-margin-base bg-background relative overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="bg-obsidian-surface border border-outline-variant/20 rounded-3xl p-12 md:p-20 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6 leading-tight">Is your website performing at its <span class="text-primary italic">peak potential</span>?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Get a complimentary, deep-dive Web Design &amp; Performance Audit. We’ll analyze your UI/UX friction points, SEO architecture, and conversion bottlenecks.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-background border-none border-b border-outline-variant text-on-background py-4 px-6 focus:ring-0 focus:border-primary placeholder:text-on-surface-variant/50 transition-all" placeholder="Enter your business email" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-105 transition-transform">Request Audit</button>
+</form>
+</div>
+<div class="hidden md:block">
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-background/50 rounded-xl border border-outline-variant/10">
+<span class="font-headline-md text-headline-md text-primary block mb-2">25+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">KPI METRICS</span>
+</div>
+<div class="p-6 bg-background/50 rounded-xl border border-outline-variant/10">
+<span class="font-headline-md text-headline-md text-primary block mb-2">48h</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">DELIVERY</span>
+</div>
+<div class="p-6 bg-background/50 rounded-xl border border-outline-variant/10">
+<span class="font-headline-md text-headline-md text-primary block mb-2">FREE</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">VALUE ADD</span>
+</div>
+<div class="p-6 bg-background/50 rounded-xl border border-outline-variant/10">
+<span class="font-headline-md text-headline-md text-primary block mb-2">SEO</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">STRATEGY</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Detailed Grid -->
+<section class="py-section-padding px-margin-base">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Feature 1 -->
+<div class="group">
+<div class="process-line mb-8 opacity-20 group-hover:opacity-100 transition-opacity duration-500"></div>
+<span class="font-label-caps text-label-caps text-primary mb-4 block">01 / DISCOVERY</span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-4">Strategic Mapping</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep exploration of your market positioning and user intent to build a solid structural foundation.</p>
+</div>
+<!-- Feature 2 -->
+<div class="group">
+<div class="process-line mb-8 opacity-20 group-hover:opacity-100 transition-opacity duration-500"></div>
+<span class="font-label-caps text-label-caps text-primary mb-4 block">02 / CRAFT</span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-4">Aesthetic Synthesis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Where artistic vision meets functional requirements, resulting in a unique and recognizable brand language.</p>
+</div>
+<!-- Feature 3 -->
+<div class="group">
+<div class="process-line mb-8 opacity-20 group-hover:opacity-100 transition-opacity duration-500"></div>
+<span class="font-label-caps text-label-caps text-primary mb-4 block">03 / LAUNCH</span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-4">Technical Scale</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Deploying lean, optimized codebases designed for security, speed, and effortless content management.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-base grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5 mb-12 md:mb-0">
+<span class="font-headline-lg text-headline-lg text-on-surface block mb-6">Candlelight Studio</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-8">Elevating digital brands through high-fidelity web design and technical SEO brilliance. Based in the shadows of the craft.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h5 class="font-label-caps text-label-caps text-primary mb-6">SERVICES</h5>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Web Design</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">SEO Strategy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">UI/UX Audit</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Brand Identity</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h5 class="font-label-caps text-label-caps text-primary mb-6">STUDIO</h5>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Expertise</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Work</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Journal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-3 mt-12 md:mt-0">
+<h5 class="font-label-caps text-label-caps text-primary mb-6">RESOURCES</h5>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Accessibility</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="col-span-12 pt-12 mt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Candlelight Studio. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="font-label-caps text-[10px] tracking-widest text-on-surface-variant/40">DESIGNED BY CRAFT</span>
+<span class="font-label-caps text-[10px] tracking-widest text-on-surface-variant/40">POWERED BY SEO</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Contextual FAB / Support -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="bg-secondary-container text-on-secondary-container rounded-full p-4 flex items-center justify-center shadow-xl shadow-glow-amber hover:scale-110 transition-transform duration-300 group">
+<span class="material-symbols-outlined">chat</span>
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-label-caps text-label-caps pl-0 group-hover:pl-2">Support</span>
+</button>
+</div>
+<script>
+        // Micro-interaction for the hero image scroll parallax
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImg = document.querySelector('header img');
+            if (heroImg) {
+                heroImg.style.transform = `translateY(${scrolled * 0.1}px)`;
+            }
+        });
+
+        // Form submission micro-interaction
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sent Successfully';
+            btn.classList.add('bg-on-secondary-container', 'text-on-primary');
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.remove('bg-on-secondary-container', 'text-on-primary');
+                e.target.reset();
+            }, 3000);
+        });
+    </script>
+</body></html>

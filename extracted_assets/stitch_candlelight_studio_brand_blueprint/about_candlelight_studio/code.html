@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Candlelight Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .shadow-glow-amber {
+            box-shadow: 0 0 20px rgba(245, 166, 35, 0.15);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #ffc880 0%, #f5a623 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .mask-radial {
+            mask-image: radial-gradient(circle, black 0%, transparent 80%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "outline": "#9f8e7a",
+                        "surface-variant": "#353534",
+                        "primary": "#ffc880",
+                        "on-surface-variant": "#d7c3ae",
+                        "background": "#131313",
+                        "secondary-container": "#c68315",
+                        "on-secondary-container": "#3d2400",
+                        "on-error": "#690005",
+                        "glow-amber": "rgba(245, 166, 35, 0.15)",
+                        "tertiary": "#d4d2cb",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#484743",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "on-primary-container": "#644000",
+                        "on-secondary-fixed": "#2a1800",
+                        "tertiary-fixed": "#e5e2db",
+                        "on-primary": "#452b00",
+                        "surface-tint": "#ffb955",
+                        "on-secondary": "#462a00",
+                        "primary-fixed": "#ffddb4",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary-fixed-dim": "#ffb955",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#291800",
+                        "tertiary-container": "#b8b6b0",
+                        "surface-container-highest": "#353534",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#633f00",
+                        "surface-dim": "#131313",
+                        "secondary-fixed": "#ffddb6",
+                        "surface": "#131313",
+                        "soft-cream": "#EFE7D8",
+                        "on-tertiary-fixed-variant": "#474742",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary": "#31312c",
+                        "outline-variant": "#524534",
+                        "on-background": "#e5e2e1",
+                        "inverse-primary": "#835500",
+                        "secondary-fixed-dim": "#ffb95a",
+                        "secondary": "#ffb95a",
+                        "obsidian-surface": "#171717",
+                        "primary-container": "#f5a623"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-base": "1rem",
+                        "gutter": "2rem",
+                        "grid-columns": "12",
+                        "section-padding": "8rem"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Manrope"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-xl-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-base h-20">
+<div class="font-headline-md text-headline-md font-bold text-on-background tracking-tighter">
+                Candlelight Studio
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Expertise</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">SEO Strategy</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md font-bold hover:shadow-glow-amber transition-all">
+                Get a Free Proposal
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero: Our Mission -->
+<section class="max-w-container-max mx-auto px-margin-base py-24 md:py-40">
+<div class="max-w-4xl">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase block mb-6">Our Mission</span>
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl mb-12 text-on-background">
+                    Illuminating the digital path for <span class="italic text-primary">premium brands</span> through craft and calculation.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    We exist at the intersection of high-end aesthetics and technical performance. We believe that true luxury isn't just about how a site looks—it's about how it earns.
+                </p>
+</div>
+</section>
+<!-- Our Philosophy (Bento Style) -->
+<section class="bg-obsidian-surface py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-base">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase block mb-4">Our Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Designing for ROI</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                        Visual appeal is the entry fee. We build high-performance engines wrapped in bespoke digital skins.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Strategy Card -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low p-10 h-[400px] flex flex-col justify-end transition-all duration-500 hover:shadow-glow-amber border border-white/5 hover:border-primary/30">
+<div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-4 text-on-background">The Strategic Glow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                                We align every pixel with your commercial objectives. Our design decisions are rooted in behavioral data and market intelligence, ensuring that beauty translates directly into bottom-line growth.
+                            </p>
+</div>
+</div>
+<!-- Metric Card -->
+<div class="md:col-span-4 bg-primary p-10 flex flex-col justify-center items-center text-center">
+<div class="font-headline-xl text-headline-xl text-on-primary mb-2">140%</div>
+<div class="font-label-caps text-label-caps text-on-primary/70 uppercase tracking-widest">Average Conversion Lift</div>
+</div>
+<!-- SEO Fusion Card -->
+<div class="md:col-span-4 bg-surface-container-high p-10 border border-white/5 flex flex-col gap-6">
+<span class="material-symbols-outlined text-primary text-4xl">analytics</span>
+<h3 class="font-headline-md text-headline-md text-on-background">Invisible Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Premium SEO is built into the foundation, not bolted on. We ensure your brand is discovered by the right audience at the right moment.
+                        </p>
+</div>
+<!-- ROI Card -->
+<div class="md:col-span-8 bg-surface-container p-10 border border-white/5 relative group overflow-hidden">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Quantifiable Luxury</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    We treat your digital presence as a high-yield asset. By fusing elite aesthetics with technical rigour, we create experiences that command attention and drive loyalty.
+                                </p>
+</div>
+<div class="w-full md:w-1/2 aspect-square relative rounded-full overflow-hidden border border-primary/20">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated data visualization dashboard displayed on a high-resolution screen in a dimly lit, luxury office environment. The UI features warm amber and gold tones against a deep charcoal background, showcasing complex growth charts and performance metrics. The atmosphere is professional, elite, and technically advanced, embodying the fusion of data and design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE2BE1HzdvF7Ap791t3S9tDtQWShiXpTadxxXL1utN90pQe3XTLrP54gDXNg4MAPCQPk-9yQ8PgKXbnpPVes4UhjqLaqEre02BvLOBPzU2w-ubOAktsvCrrZTe4KNaYCN_zPaOomNpsKiwb1gH28PSNrsSHIC9ay2X3XzSzSpwM_ut0Rob08zKB8UOU-UF3qqmMO4TWVxvt98MEz3152K9q9E4py_Ru2UwSSvVJDNRzPanRaTHDhR1KMtxN-3O674O_ItuVSxKqgc"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Candlelight: The Fusion -->
+<section class="max-w-container-max mx-auto px-margin-base py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover opacity-80" data-alt="An elegant, minimalist workspace featuring a high-end designer laptop and a single glowing candle on a polished obsidian desk. The room is dark, with soft warm lighting highlighting the textures of high-quality materials. The scene represents the focused, artisan approach of a boutique studio combining technical mastery with creative soul." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbJw3H6RorDfDU6ANU07gNOUZ1y7wLns2jOub9KO0KhetoCNqyzaoa7w9vPEKCnDj2rFJUd3SwDWB2JN6sTRCN3qELrb9rJoBH7pYELZTHih_6p153paU8AggAIACYeGC7h29jKfteu45MLGVWRVgid6Dc__3xgl-9t6OLX0szDuAp_L-sGtCeIDmDfAsoSvjRrloVHvI430hkH-BFwQIGe9wOEkdWai6x5BGwOKn5yjRbEWyHnhdxg9GDb8iPVKLz6U7YWM4cCMs"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 backdrop-blur-xl border border-primary/20 flex items-center justify-center text-center p-4">
+<p class="font-label-caps text-label-caps text-primary uppercase">The Boutique Advantage</p>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase block mb-6">Why Candlelight</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-8">Technical SEO meets <br/><span class="italic">High-End Design</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="text-primary font-headline-md">01</span>
+<div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-2">Bespoke Precision</h4>
+<p class="font-body-md text-on-surface-variant">No templates. No shortcuts. Every site is a custom-coded masterpiece designed to dominate search results and captivate users.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-primary font-headline-md">02</span>
+<div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-2">Performance First</h4>
+<p class="font-body-md text-on-surface-variant">We optimize for Core Web Vitals from day one, ensuring your site is as fast and functional as it is beautiful.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-primary font-headline-md">03</span>
+<div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-2">Growth Partner</h4>
+<p class="font-body-md text-on-surface-variant">We don't just deliver a project; we manage a legacy. Continuous SEO refinement keeps your brand ahead of the curve.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Team: Minimalist Profiles -->
+<section class="bg-surface-container-lowest py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-base">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase block mb-4">The Team</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Architects of Atmosphere</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Member 1 -->
+<div class="group text-center">
+<div class="aspect-[3/4] bg-surface-container-low mb-8 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a creative director in a dark charcoal studio. He is wearing a tailored black turtleneck, and the lighting is dramatic with a soft golden glow on one side of his face. The background is a deep, textured obsidian, creating a high-fashion, premium agency aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdyl6y7nO5uP9xAmv7T6X3NVxNO9TaOCUYoivPR-khR6JlI87wf6hOtsLkz24KXw3Hs6f4lnVjO7O4AEXWQQKtFxzZhYUCk8Vuqeq1HxoUC0nTVVuSI1wC9G6MXdVC7Wgll7diYrx4uACkX3Ta2gSJYdHXXNmOkEhYg0darUDSNxvtoJENIPZ8-VP4n6xGWK5RCTZsOpQDQxSl0tna2dkD3sszYwVHNmjk5RxSHLTPp-CDSPGJtlpXmLAbujJJRbY2oEYY1r68y9M"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-1">Julian Thorne</h3>
+<p class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4">Founder &amp; Creative Lead</p>
+</div>
+<!-- Member 2 -->
+<div class="group text-center">
+<div class="aspect-[3/4] bg-surface-container-low mb-8 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a technical SEO lead in a dark, minimalist setting. She has a sharp, intelligent gaze and is wearing a sleek, modern blazer. The lighting is low-key, with warm highlights reflecting off the dark surfaces behind her, symbolizing the fusion of analytical depth and premium style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO6h8hL5wnil4HWN9msss006y93lGqbjVAllyz-V1Ej1EVJOPLaj5Otkq3xhGU7zVbpJbZMbOMZ-14UyBRhSW9YkIh0BvDmq3cnTuX7txPGQyXCcSdba13JFshsU_DZsBTjU-m3WLVVPc-os-o-_7gZitFIjYL1h0BVxmwsKsDTbWSkSImClQ3eGLxznkIsilMKkwFkKH0tG2wPlNiK6mNl8Szny130BQsfvR7WTyWS0r-Us55AUkgbBNysJTqN-kabjMg6aI8fcU"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-1">Elena Vane</h3>
+<p class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4">Head of Technical SEO</p>
+</div>
+<!-- Member 3 -->
+<div class="group text-center">
+<div class="aspect-[3/4] bg-surface-container-low mb-8 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a senior experience designer in a high-end, dimly lit studio environment. He is leaning slightly against a dark wall, with a soft amber spotlight highlighting the high-quality fabric of his dark suit. The overall mood is sophisticated, authoritative, and focused on artisan-level craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfg5HpFvb_DwcFTLMGU8cIfA3p2NZ1M_wZ9q-DaTbd7apUqVfQuV8JwKUyyuM_J8BBMGgNB5EuJUSu6EKWbrFZE7xsSHvWpBmOKr7JQfeFOKoeIy48li5oeivewx5eBe5EuAGMmocw2kThcLJkXhV-7BmfFUcj-XUKRuqCZSqqz50M7uKbL-c-VBJPxWg6McMJbCitCU6Ahl2g7g-AaB-RPuUrvbaEcLG6OYPm5lNne5lafjlGFkR0dgVhhpYCUZMPe2_L90cjD_g"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-1">Marcus Sterling</h3>
+<p class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4">Senior Experience Designer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-32 overflow-hidden">
+
+<div class="relative z-10 max-w-4xl mx-auto px-margin-base text-center">
+<h2 class="font-headline-xl text-headline-xl text-on-background mb-8">Ready to outshine the competition?</h2>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-md text-label-md font-bold hover:scale-105 transition-transform shadow-glow-amber">
+                    Inquire About a Project
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-base grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5">
+<div class="font-headline-lg text-headline-lg text-on-surface mb-6">Candlelight Studio</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-8">
+                    Crafting digital legacies for brands that demand more than just a presence. High-end design. Technical SEO dominance.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-on-surface text-sm">public</span>
+</a>
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-on-surface text-sm">share</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h5 class="font-label-caps text-label-caps text-on-surface mb-6 uppercase tracking-widest">Agency</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Our Story</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">The Process</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Expertise</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h5 class="font-label-caps text-label-caps text-on-surface mb-6 uppercase tracking-widest">Legal</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Brand Assets</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-caps text-label-caps text-on-surface mb-6 uppercase tracking-widest">Join the Newsletter</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Stay informed on digital luxury and technical trends.</p>
+<form class="relative">
+<input class="w-full bg-surface-container-high border-none rounded-none py-4 px-6 focus:ring-1 focus:ring-primary text-on-surface placeholder-on-surface-variant/50" placeholder="Email Address" type="email"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-primary" type="submit">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+<div class="md:col-span-12 pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body-md text-body-md text-on-surface-variant/50">© 2024 Candlelight Studio. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant/50 hover:text-primary transition-colors" href="#">Sitemap</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant/50 hover:text-primary transition-colors" href="#">Accessibility</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Support FAB) -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="bg-secondary-container text-on-secondary-container rounded-full p-5 flex items-center justify-center shadow-xl hover:scale-110 hover:shadow-primary/20 transition-all duration-300 active:scale-95 group">
+<span class="material-symbols-outlined">chat</span>
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-caps text-label-caps ml-0 group-hover:ml-3 uppercase tracking-widest">Support</span>
+</button>
+</div>
+<script>
+        // Micro-interactions for navigation scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'bg-background/95');
+                nav.classList.remove('h-20', 'bg-background/80');
+            } else {
+                nav.classList.add('h-20', 'bg-background/80');
+                nav.classList.remove('h-16', 'bg-background/95');
+            }
+        });
+
+        // Parallax-ish effect for team images
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const img = card.querySelector('img');
+                if (img) {
+                    const rect = card.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width - 0.5;
+                    const y = (e.clientY - rect.top) / rect.height - 0.5;
+                    img.style.transform = `scale(1.1) translate(${x * 20}px, ${y * 20}px)`;
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                const img = card.querySelector('img');
+                if (img) img.style.transform = `scale(1) translate(0, 0)`;
+            });
+        });
+    </script>
+</body></html>

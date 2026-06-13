@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | Candlelight Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(245, 166, 35, 0.15);
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-transition {
+            transition: all 0.3s ease-in-out;
+        }
+        details[open] .faq-icon {
+            transform: rotate(45deg);
+            color: #ffc880;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "outline": "#9f8e7a",
+                        "surface-variant": "#353534",
+                        "primary": "#ffc880",
+                        "on-surface-variant": "#d7c3ae",
+                        "background": "#131313",
+                        "secondary-container": "#c68315",
+                        "on-secondary-container": "#3d2400",
+                        "on-error": "#690005",
+                        "glow-amber": "rgba(245, 166, 35, 0.15)",
+                        "tertiary": "#d4d2cb",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#484743",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "on-primary-container": "#644000",
+                        "on-secondary-fixed": "#2a1800",
+                        "tertiary-fixed": "#e5e2db",
+                        "on-primary": "#452b00",
+                        "surface-tint": "#ffb955",
+                        "on-secondary": "#462a00",
+                        "primary-fixed": "#ffddb4",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary-fixed-dim": "#ffb955",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed": "#291800",
+                        "tertiary-container": "#b8b6b0",
+                        "surface-container-highest": "#353534",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#633f00",
+                        "surface-dim": "#131313",
+                        "secondary-fixed": "#ffddb6",
+                        "surface": "#131313",
+                        "soft-cream": "#EFE7D8",
+                        "on-tertiary-fixed-variant": "#474742",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary": "#31312c",
+                        "outline-variant": "#524534",
+                        "on-background": "#e5e2e1",
+                        "inverse-primary": "#835500",
+                        "secondary-fixed-dim": "#ffb95a",
+                        "secondary": "#ffb95a",
+                        "obsidian-surface": "#171717",
+                        "primary-container": "#f5a623"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-base": "1rem",
+                        "gutter": "2rem",
+                        "grid-columns": "12",
+                        "section-padding": "8rem"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Manrope"],
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-base h-20">
+<div class="font-headline-md text-headline-md font-bold text-on-background tracking-tighter">
+                Candlelight Studio
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Expertise</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">SEO Strategy</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-md text-label-md text-on-background hover:text-primary transition-colors duration-300" href="#">Contact</a>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-2.5 rounded hover:bg-primary transition-colors glow-hover">
+                    Get a Free Proposal
+                </button>
+</div>
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="pt-40 pb-20 px-margin-base max-w-container-max mx-auto text-center">
+<div class="inline-block px-4 py-1 mb-6 border border-primary/30 rounded-full font-label-caps text-label-caps text-primary tracking-widest uppercase">
+                Premium Performance
+            </div>
+<h1 class="font-headline-xl text-headline-xl mb-6 max-w-4xl mx-auto">
+                Investment in High-End <span class="text-primary italic">Craftsmanship</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Transparent pricing for luxury digital experiences and technical SEO dominance. Choose the plan that aligns with your growth trajectory.
+            </p>
+</section>
+<!-- Pricing Cards Section -->
+<section class="py-20 px-margin-base max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Starter Tier -->
+<div class="bg-obsidian-surface p-10 border border-outline/10 flex flex-col transition-all duration-300 hover:border-primary/20">
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md mb-2">Starter</h3>
+<p class="text-on-surface-variant font-body-md">Essential SEO &amp; Design for emerging brands.</p>
+</div>
+<div class="mb-8">
+<span class="font-headline-lg text-headline-lg">$2,500</span>
+<span class="text-on-surface-variant font-label-md">/month</span>
+</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">5 Pages Custom Design</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Core SEO Technical Audit</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Standard CMS Integration</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Monthly Performance Report</span>
+</li>
+</ul>
+<button class="w-full py-4 border border-outline text-on-background font-label-md hover:bg-on-background hover:text-background transition-all duration-300">
+                        Inquire Now
+                    </button>
+</div>
+<!-- Growth Tier (Highlighted) -->
+<div class="bg-surface-container-high p-10 border-2 border-primary relative flex flex-col transform md:-translate-y-4 shadow-2xl glow-hover z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary font-label-caps text-label-caps px-4 py-1 tracking-widest">
+                        MOST POPULAR
+                    </div>
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md mb-2">Growth</h3>
+<p class="text-on-surface-variant font-body-md">Full-scale digital dominance and authority.</p>
+</div>
+<div class="mb-8">
+<span class="font-headline-lg text-headline-lg">$5,500</span>
+<span class="text-on-surface-variant font-label-md">/month</span>
+</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Unlimited Design Iterations</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Advanced Keyword Strategy</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Competitor Intel &amp; Analysis</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Bi-weekly Strategy Calls</span>
+</li>
+<li class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-body-md font-bold">Priority Studio Support</span>
+</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-label-md font-bold hover:brightness-110 transition-all duration-300">
+                        Start Growing
+                    </button>
+</div>
+<!-- Custom Tier -->
+<div class="bg-obsidian-surface p-10 border border-outline/10 flex flex-col transition-all duration-300 hover:border-primary/20">
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md mb-2">Enterprise</h3>
+<p class="text-on-surface-variant font-body-md">Custom solutions for global-scale agencies.</p>
+</div>
+<div class="mb-8">
+<span class="font-headline-lg text-headline-lg">Custom</span>
+<span class="text-on-surface-variant font-label-md">/bespoke</span>
+</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Dedicated Project Architect</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Custom API Integrations</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">Global SEO Localization</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md">SLA &amp; Security Compliance</span>
+</li>
+</ul>
+<button class="w-full py-4 border border-outline text-on-background font-label-md hover:bg-on-background hover:text-background transition-all duration-300">
+                        Consult with Us
+                    </button>
+</div>
+</div>
+</section>
+<!-- Feature Comparison Table -->
+<section class="py-20 px-margin-base max-w-container-max mx-auto overflow-x-auto">
+<h2 class="font-headline-lg text-headline-lg mb-16 text-center">Detailed Feature <span class="italic text-primary">Comparison</span></h2>
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="border-b border-outline/20">
+<th class="py-6 px-4 font-headline-md text-on-surface-variant w-1/4">Features</th>
+<th class="py-6 px-4 font-label-caps text-label-caps text-primary tracking-widest text-center w-1/4">Starter</th>
+<th class="py-6 px-4 font-label-caps text-label-caps text-primary tracking-widest text-center bg-primary/5 w-1/4">Growth</th>
+<th class="py-6 px-4 font-label-caps text-label-caps text-primary tracking-widest text-center w-1/4">Enterprise</th>
+</tr>
+</thead>
+<tbody class="font-body-md">
+<!-- Tech SEO Group -->
+<tr class="bg-surface-container-low">
+<td class="py-4 px-4 font-label-md text-primary/70 tracking-widest uppercase" colspan="4">Technical SEO</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="py-6 px-4 font-semibold">Technical Audits</td>
+<td class="text-center py-6 px-4">Quarterly</td>
+<td class="text-center py-6 px-4 bg-primary/5">Monthly</td>
+<td class="text-center py-6 px-4">Weekly</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="py-6 px-4 font-semibold">Keyword Tracking</td>
+<td class="text-center py-6 px-4">50 Keywords</td>
+<td class="text-center py-6 px-4 bg-primary/5">500 Keywords</td>
+<td class="text-center py-6 px-4">Unlimited</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="py-6 px-4 font-semibold">Backlink Monitoring</td>
+<td class="text-center py-6 px-4"><span class="material-symbols-outlined opacity-30">remove</span></td>
+<td class="text-center py-6 px-4 bg-primary/5 text-primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check</span></td>
+<td class="text-center py-6 px-4 text-primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check</span></td>
+</tr>
+<!-- Design Group -->
+<tr class="bg-surface-container-low">
+<td class="py-4 px-4 font-label-md text-primary/70 tracking-widest uppercase" colspan="4">Creative Design</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="py-6 px-4 font-semibold">Custom Layouts</td>
+<td class="text-center py-6 px-4">Templates Only</td>
+<td class="text-center py-6 px-4 bg-primary/5">Bespoke UI</td>
+<td class="text-center py-6 px-4">High-End Bespoke UI</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="py-6 px-4 font-semibold">Animations &amp; Motion</td>
+<td class="text-center py-6 px-4">Standard</td>
+<td class="text-center py-6 px-4 bg-primary/5">Premium Shaders</td>
+<td class="text-center py-6 px-4">Advanced Interactions</td>
+</tr>
+<tr class="border-b border-outline/10">
+<td class="py-6 px-4 font-semibold">Asset Creation</td>
+<td class="text-center py-6 px-4">Basic Icons</td>
+<td class="text-center py-6 px-4 bg-primary/5">Full Brand Suite</td>
+<td class="text-center py-6 px-4">Custom Motion Assets</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- Maintenance & Support Section -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-base grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative aspect-square overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 transition-all duration-700" data-alt="A macro close-up of a high-tech circuit board with orange glowing fiber optic cables running through it. The lighting is low and atmospheric, emphasizing technical precision and maintenance reliability. The scene is set in a dark luxury studio environment with warm amber highlights against deep obsidian surfaces. The mood is sophisticated, secure, and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEEJaCCTpwGwe-tV-m2Kaepd-Tro7Jm5aAKIQzAzZLBU2CEA38uXnD74TVXuEWIzQFxiUyQgNjhGmujJhQ--Z0uo6OrZUtE6aEFu8djVNUCPJoXiH13ZSIYJh3-Pf-q8sUTZ--7GeNWHm6NRaV109m_aqB5d_TKhna6WPBdGi-5Ysby3W3qHp0Nr1kBkzrs2MI90SpPaqW-h30AU-JPVUU64KNWy2t6P-uGsxeqyXcYhBFp0B8hEwyJY9r3qKbfFTv0gj4JoQ_IyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg">Concierge <span class="italic text-primary">Support</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our relationship doesn't end at launch. We provide ongoing, white-glove maintenance to ensure your digital asset remains performant, secure, and ahead of search engine updates.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container border-l-2 border-primary">
+<h4 class="font-label-md text-primary mb-2 uppercase tracking-widest">Speed Optimization</h4>
+<p class="font-body-md text-on-surface-variant">Continuous monitoring of Core Web Vitals and server response times.</p>
+</div>
+<div class="p-6 bg-surface-container border-l-2 border-primary">
+<h4 class="font-label-md text-primary mb-2 uppercase tracking-widest">Security Shields</h4>
+<p class="font-body-md text-on-surface-variant">Weekly security audits, malware scans, and real-time firewall monitoring.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Deep FAQ Section -->
+<section class="py-section-padding px-margin-base max-w-4xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg mb-16 text-center">Frequently Asked <span class="italic text-primary">Questions</span></h2>
+<div class="space-y-4">
+<details class="group bg-obsidian-surface border border-outline/10 rounded-lg">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
+<span class="font-headline-md text-2xl">Can I upgrade my plan later?</span>
+<span class="material-symbols-outlined faq-icon faq-transition text-primary">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant font-body-md leading-relaxed">
+                        Absolutely. Most of our clients start on the Starter tier and migrate to Growth as their organic traffic scales. We handle the transition seamlessly with no downtime to your strategy or operations.
+                    </div>
+</details>
+<details class="group bg-obsidian-surface border border-outline/10 rounded-lg" open="">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
+<span class="font-headline-md text-2xl">How long until I see SEO results?</span>
+<span class="material-symbols-outlined faq-icon faq-transition text-primary">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant font-body-md leading-relaxed">
+                        Technical SEO is a long-term investment. While performance gains (speed, indexability) are immediate, organic keyword ranking improvements typically materialize within 3-6 months. The Growth plan accelerates this through more aggressive content and backlink strategies.
+                    </div>
+</details>
+<details class="group bg-obsidian-surface border border-outline/10 rounded-lg">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
+<span class="font-headline-md text-2xl">Is there a minimum contract length?</span>
+<span class="material-symbols-outlined faq-icon faq-transition text-primary">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant font-body-md leading-relaxed">
+                        To maintain the quality and strategy depth Candlelight Studio is known for, we operate on a 6-month minimum commitment for SEO-intensive plans. Design-only projects are billed per milestone.
+                    </div>
+</details>
+<details class="group bg-obsidian-surface border border-outline/10 rounded-lg">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
+<span class="font-headline-md text-2xl">What is included in Bespoke Enterprise?</span>
+<span class="material-symbols-outlined faq-icon faq-transition text-primary">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant font-body-md leading-relaxed">
+                        The Enterprise tier is a custom-scoped partnership. It typically involves international SEO strategies, complex multi-site architecture management, and full-time dedicated design and engineering resources.
+                    </div>
+</details>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-padding text-center bg-gradient-to-b from-background to-surface-container-low">
+<h2 class="font-headline-xl text-headline-xl mb-8">Ready to Illuminate Your <span class="text-primary italic">Brand?</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
+                Join a selected group of high-growth brands working with Candlelight Studio.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary font-label-md px-10 py-5 rounded glow-hover transition-all duration-300">
+                    Get a Free Strategy Audit
+                </button>
+<button class="border border-outline text-on-background font-label-md px-10 py-5 rounded hover:bg-white/5 transition-all duration-300">
+                    View Portfolio
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-padding border-t border-outline/10">
+<div class="max-w-container-max mx-auto px-margin-base grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5 space-y-6">
+<div class="font-headline-lg text-headline-lg text-on-surface">Candlelight Studio</div>
+<p class="text-on-surface-variant max-w-sm">
+                    A premium digital agency specializing in the intersection of technical SEO and high-end creative design. Crafting luxury experiences for the digital age.
+                </p>
+</div>
+<div class="col-span-6 md:col-span-2 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-primary mb-4">Nav</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Work</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Journal</a>
+</div>
+<div class="col-span-6 md:col-span-2 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-primary mb-4">Support</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility</a>
+</div>
+<div class="col-span-12 md:col-span-3">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">Newsletter</h4>
+<div class="flex flex-col gap-4">
+<input class="bg-surface-container-low border-b border-outline focus:border-primary border-t-0 border-x-0 outline-none p-2 text-on-surface" placeholder="email@studio.com" type="email"/>
+<button class="bg-primary-container text-on-primary-container font-label-md py-3 hover:bg-primary transition-all">Subscribe</button>
+</div>
+</div>
+<div class="col-span-12 pt-16 mt-16 border-t border-outline/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-on-surface-variant font-body-md">© 2024 Candlelight Studio. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-on-surface-variant hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (FAB Support) -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="bg-secondary-container text-on-secondary-container rounded-full p-4 flex items-center justify-center shadow-xl hover:scale-110 hover:shadow-primary/20 transition-transform duration-300 active:scale-95">
+<span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-label-caps text-label-caps pr-2">Support</span>
+</button>
+</div>
+<script>
+        // Simple scroll effect for Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('py-4');
+                nav.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>
