@@ -19,8 +19,9 @@ const Contact = () => {
     setStatus({ type: 'loading', message: 'Sending your message...' });
     
     try {
-      // This will be connected to the backend in Todo #5
-      const response = await fetch('http://localhost:5000/api/contact', {
+      // Use the environment variable for the API URL, fallback to localhost for dev
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
