@@ -86,10 +86,12 @@ const Contact = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div className="space-y-2">
-                  <label className="font-label-md text-on-surface-variant block">Full Name</label>
+                  <label htmlFor="name" className="font-label-md text-on-surface-variant block">Full Name</label>
                   <input 
+                    id="name"
                     type="text" 
                     name="name"
+                    autoComplete="name"
                     value={formData.name}
                     onChange={handleInputChange}
                     className="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary outline-none transition-all"
@@ -98,21 +100,24 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="font-label-md text-on-surface-variant block">Email Address</label>
+                  <label htmlFor="email" className="font-label-md text-on-surface-variant block">Email Address</label>
                   <input 
+                    id="email"
                     type="email" 
                     name="email"
+                    autoComplete="email"
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full bg-background border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary outline-none transition-all"
                     placeholder="john@example.com"
                     required
                   />
-                </div>
+                </div
               </div>
               <div className="space-y-2 mb-6">
-                <label className="font-label-md text-on-surface-variant block">Service Interested In</label>
+                <label htmlFor="service" className="font-label-md text-on-surface-variant block">Service Interested In</label>
                 <select 
+                  id="service"
                   name="service"
                   value={formData.service}
                   onChange={handleInputChange}
@@ -125,8 +130,9 @@ const Contact = () => {
                 </select>
               </div>
               <div className="space-y-2 mb-8">
-                <label className="font-label-md text-on-surface-variant block">Message</label>
+                <label htmlFor="message" className="font-label-md text-on-surface-variant block">Message</label>
                 <textarea 
+                  id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
